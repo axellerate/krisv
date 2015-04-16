@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Allan:700' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<title>Kris.V Developer</title>
+</head>
+<body>
+<header>
+{% include 'header.html' %}
+</header>
+<main>
+	<nav>
+	{% include 'navigation.html' %}
+	</nav>
+	<section class="main_content_area">
+		<section class="contact_form_container">
+			<form method="POST" name="contact_form">
+				<table>
+					<tr>
+						<td>Email:<br><input type="text" name="email_sender" size="30"></td><td></td>
+					</tr>
+					<tr>
+						<td>Subject:<br><input type="text" name="email_subject" size="30"></td><td></td>
+					</tr>
+					<tr>
+						<td>Contact:<br><textarea name="email_body" cols="50" rows="15" ></textarea></td><td></td>
+					</tr>
+				</table>
+			</form>
+
+		</section>
+	</section>
+</main>
+<footer>
+{% include 'footer.html' %}
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Allan:700' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+	<script>tinymce.init({selector:'textarea'});</script>
+	<title>Kris.V Developer</title>
+</head>
+<body>
+<header>
+{% include 'header.html' %}
+</header>
+<main>
+	<nav>
+	{% include 'navigation.html' %}
+	</nav>
+	<br><br>
+	<center>Create a New User
+	<form method="post">
+		Username: <input type="text" name="username"><br>
+		Password: <input type="password" name="password"><br>
+		Email: <input type="email" name="email"><br>
+		<input type="submit" value="Create User">
+	</form>
+	</center>
+
+</main>
+<footer>
+{% include 'footer.html' %}
+</footer>
+</body>
+</html>

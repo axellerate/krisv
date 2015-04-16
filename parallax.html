@@ -1,0 +1,220 @@
+<html>
+
+<head>
+	<script src="jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+	<script src="jquery.firefly.js"></script>
+
+	<style>
+
+	body{
+		margin:0;
+		padding:0;
+	}
+
+	ul{
+		margin:0;
+		padding:0;
+	}
+
+	ul li{
+		list-style: none;
+		overflow: hidden;
+		height: 750px;
+		position: relative;
+	}
+	
+	.parallax-background{
+		height: 900px;
+	}
+
+	.frame-1{
+		background-image: url('test.png');
+		background-position: center;
+	}
+
+	.header{
+		background-image: url('fields-and-sun.jpg');
+		background-position: 100% 100%;
+
+	}
+
+	.natural-code{
+		background:#111111;
+	}
+
+	.natural-world{
+		background:#111111;
+	}
+
+	.earth{
+		background-image: url('auroa.jpg');
+		background-position: 70% 60%;
+	}
+
+	.earth{
+		background-image: url('space-road.jpg');
+		background-position: 70% 60%;
+	}
+
+	ul li .subcontent{
+		position: absolute;
+		top: 50px;
+		left: 100px;
+		color: white;
+		font-family: helvetica;
+	}
+
+	h1{
+		font-family: 'Amaranth', sans-serif;
+	}
+
+	.menu{
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 70px;
+		color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		background: #111111;
+	}
+
+	.menu-buttons{
+		width: 300px;
+		margin-top: -80px;
+		float: right;
+	}
+
+	.banner{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-image:url('banner.png');
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+
+
+	</style>
+</head>
+
+<body>
+
+	<ul class="parallax">
+		<li>
+			<div class="parallax-background frame-1">
+						<div class="banner"></div>
+			<div class="subcontent">
+<!-- 				<div class="menu">
+					<div class="menu-buttons"><button id="natural-code-btn">Natural Code</button> | <button id="apps-btn">Apps</button> | <button id="technology-btn">Technology</button> | About</div>			
+				</div> -->
+
+
+			</div>
+			</div>
+			<script>
+				$(document).ready(function() {
+					$.firefly({images : ['1.jpg', '2.jpg'],total : 200}); 	
+				});
+			</script>
+		</li>
+		<li>
+			<div class="parallax-background header">
+			</div>
+			<div class="subcontent">
+			</div>
+		</li>
+		<li id="natural-code">
+			<div class="parallax-background natural-code"></div>
+			<div class="subcontent">
+			</div>
+		</li>
+		<li id="apps">
+			<div class="parallax-background middle"></div>
+			<div class="subcontent">
+						
+
+			</div>
+		</li>
+		<li id="technology">
+			<div class="parallax-background space-road"></div>
+			<div class="subcontent">
+						
+
+			</div>
+		</li>
+	</ul>
+	<script>
+
+	(function($) {
+
+		var $container = $(".parallax");
+		var $divs = $container.find("div.parallax-background");
+		var thingBeingScrolled = document.body;
+		var liHeight = $divs.eq(0).closest("li").height();
+		var diffHeight = $divs.eq(0).height() - liHeight;
+
+		var i, len, div, li, offset, scroll, top;
+
+		var render = function(){
+
+			top = thingBeingScrolled.scrollTop;
+
+			//loop through the divs on the page
+			for(i = 0, len = $divs.length; i < len; i++){
+
+				//get one div
+				div = $divs[i];
+
+				// get one parent li
+				li = div.parentNode;
+
+				//calculate the offsetTOP to scroll
+				offset = $(div).offset().top;
+
+				//calculate the amount to scroll
+				scroll = Math.round(((top - offset) / liHeight) * diffHeight);
+
+				//apply the scroll amount
+				div.style.webkitTransform = "translate3d(0px," + scroll + "px, 0px)";
+
+			}
+
+		};
+
+		(function loop() {
+		    requestAnimationFrame(loop);
+		    render();
+		})();
+
+
+	})(jQuery);
+
+	$('#natural-code-btn').click(function() {
+		$('html, body').animate({
+		     scrollTop:$('#natural-code').offset().top
+		}, 1000);
+
+	});
+
+
+	$('#apps-btn').click(function() {
+		$('html, body').animate({
+		     scrollTop:$('#apps').offset().top
+		}, 1000);
+
+	});
+
+	$('#technology-btn').click(function() {
+		$('html, body').animate({
+		     scrollTop:$('#technology').offset().top
+		}, 1000);
+
+	});
+
+	</script>
+
+</body>
+
+</html>
