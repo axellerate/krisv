@@ -103,7 +103,7 @@
 
 
 	ul li .subcontent{
-		position: relative;
+		position: absolute;
 		top: 50px;
 		color: white;
 		font-family: helvetica;
@@ -127,6 +127,7 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		background: #111111;
+
 	}
 
 	.menu-buttons{
@@ -158,18 +159,19 @@
 		position: relative;
 		width: 480px;
 		height: 100px;
-		margin: 0 auto;
-		left: -330px;
-		top: -40px;
+		margin: auto; 
+		left: -320px;
+		top: 10px;
+
 	}
 
 	.menu-section-two{
 		position: relative;
 		width: 480px;
 		height: 100px;
-		margin: 0 auto;
-		left: 370px;
-		top: -140px;
+		margin: auto; 
+		left: 360px;
+		top: -90px;
 	}
 
 	.top-menu-button{
@@ -177,6 +179,7 @@
 		width: 80px;
 		height: 80px;
 		font-weight: bold;
+		color: white;
 	}
 
 	.top-menu-button:hover{
@@ -290,7 +293,7 @@
 		width: 100px;
 		background-repeat: no-repeat;
 		margin-left: -110px;
-		margin-top: 520px;
+		margin-top: 525px;
 		z-index: 1;
 	}
 	#rocket-fire{
@@ -308,8 +311,10 @@
 		width: 100px;
 		height: 100px;
 		margin-top: 530px;
-		margin-left: -180px;
+		margin-left: -170px;
 	}
+/*	margin-top: 580px;
+	margin-left: -650px;*/
 
 	#sublime-window{
 		position: absolute;
@@ -317,7 +322,7 @@
 		width: 376px;
 		height: 235px;
 		margin-top: 465px;
-		margin-left: -318px;
+		margin-left: -308px;
 	}
 
 	#mac-pointer{
@@ -326,7 +331,7 @@
 		width: 376px;
 		height: 235px;
 		margin-top: 570px;
-		margin-left: -140px;
+		margin-left: -130px;
 		background-repeat: no-repeat;
 	}
 
@@ -336,7 +341,7 @@
 		width: 376px;
 		height: 235px;
 		margin-top: 475px;
-		margin-left: -318px;
+		margin-left: -308px;
 		background-repeat: no-repeat;
 	}
 
@@ -346,7 +351,7 @@
 		width: 100px;
 		height: 100px;
 		margin-top: 530px;
-		margin-left: -180px;
+		margin-left: -170px;
 		background-repeat: no-repeat;
 	}
 
@@ -356,7 +361,7 @@
 		width: 100px;
 		height: 100px;
 		margin-top: 645px;
-		margin-left: -165px;
+		margin-left: -155px;
 		background-repeat: no-repeat;
 	}
 
@@ -366,7 +371,7 @@
 		width: 382px;
 		height: 235px;
 		margin-top: 465px;
-		margin-left: -322px;
+		margin-left: -310px;
 		background-repeat: no-repeat;
 	}
 
@@ -376,7 +381,7 @@
 		width: 400px;
 		height: 235px;
 		margin-top: 465px;
-		margin-left: -322px;
+		margin-left: -310px;
 		background-repeat: no-repeat;
 	}
 
@@ -404,8 +409,7 @@
 					
 				</div>
 			</div>
-			<div class="subcontent">
-			<div class="menu-section-one">
+						<div class="menu-section-one">
 
 				<div class="top-menu-button">
 					<a href="/">
@@ -482,12 +486,14 @@
 				<div id="aurora-screen"></div>
 				<div id="mac-pointer"></div>
 			</div><!--End of menu-section-two-->
-
-				<span id="code-for-tomorrow"><h1>Coding for <span>tomorrow</span></h1></span>
+			<span id="code-for-tomorrow"><h1>Coding for <span>tomorrow</span></h1></span>
 				<span id="natural-digital">
 					<span id="natural-world"><h1>Merging the <span style="color: #009933;">natural</span> world</span>
 					<span id="digital-world">with the <span style="color: #33CCFF;">digital</span></h1></span>
 				</span>
+
+			<div class="subcontent">
+
 
 			</div><!--End of subcontent-->
 			</div><!--End of parallax-background frame-1-->
