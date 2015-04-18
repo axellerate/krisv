@@ -1,3 +1,4 @@
+<!DOCTYPE HTML> 
 <html>
 <!-- <div class="menu">
 	<div class="menu-buttons"><button id="natural-code-btn">Natural Code</button> | <button id="apps-btn">Apps</button> | <button id="technology-btn">Technology</button> | About</div>			
@@ -100,10 +101,10 @@
 				<div id="aurora-screen"></div>
 				<div id="mac-pointer"></div>
 			</div><!--End of menu-section-two-->
-			<span id="code-for-tomorrow"><h1>Coding for <span>tomorrow</span></h1></span>
+			<span id="code-for-tomorrow"><h1>Coding for <span>Tomorrow</span></h1></span>
 				<span id="natural-digital">
-					<span id="natural-world"><h1>Merging the <span style="color: #009933;">natural</span> world</span>
-					<span id="digital-world">with the <span style="color: #33CCFF;">digital</span></h1></span>
+					<span id="natural-world"><h1>Merging the <span style="color: #009933;">Natural</span> World...</span>
+					<span id="digital-world">With the <span style="color: #33CCFF;">Digital</span></h1></span>
 				</span>
 
 			<div class="subcontent">
@@ -112,11 +113,6 @@
 			</div><!--End of subcontent-->
 			</div><!--End of parallax-background frame-1-->
 		</div>
-		<script>
-			window_size = $( window ).height();
-			$('.header').height(window_size);
-			$('.parallax-background.header').height(window_size+250);
-		</script>
 		</li>
 
 		<li id="portfolio">
@@ -179,8 +175,13 @@
 	<script src="/static/js/jquery.min.js"></script>
 	<script src="/static/js/jquery.firefly.js"></script>
 	<script src="/static/js/jquery.bxslider.min.js"></script>
-	<script src="/static/js/jquery-ui.min"></script>
 	<script src="/static/js/main.js"></script>
+	<script>
+		window_size = $(window).height(); 
+		console.log(window_size);
+		$('.header').height(window_size);
+		$('.parallax-background.header').height(window_size+250);
+	</script>
 </body>
 
 </html>

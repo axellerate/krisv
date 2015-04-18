@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 		$("#develop-graphic").hide();
 		$("#learn-graphic").hide();
 		$("#inform-graphic").hide();
@@ -188,3 +187,8 @@ $(document).ready(function(){
 		}, 1000);
 
 	});
+
+	//sets the first frame as high as the window
+	window_size = $( window ).height();
+	$('.header').height(window_size);
+	$('.parallax-background.header').height(window_size+250);
