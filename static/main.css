@@ -1,387 +1,413 @@
 
-    body{
-        margin:0;
-        padding:0;
-    }
+body{
+    margin:0;
+    padding:0;
+}
 
-    ul{
-        margin:0;
-        padding:0;
-    }
+ul{
+    margin:0;
+    padding:0;
+}
 
-    ul li{
-        list-style: none;
-        overflow: hidden;
-        height: 750px;
-        position: relative;
-    }
+ul li{
+    list-style: none;
+    overflow: hidden;
+    height: 750px;
+    position: relative;
+}
+
+.parallax-background{
+    height: 900px;
+}
+
+.header{
+    background-image: url('/img/site-background.png');
+    background-position: top;
+
+}
+
+.portfolio{
     
-    .parallax-background{
-        height: 900px;
-    }
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background: #111111;
 
-    .header{
-        background-image: url('/img/site-background.png');
-        background-position: top;
-
-    }
-
-    .portfolio{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background: #111111;
-
-    }
+}
 
 
-    .coding{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background-image: url('/img/codingbg.png');
-        background-position: center;
-    }
+.coding{
+    
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background-image: url('/img/codingbg.png');
+    background-position: center;
+}
 
-    .code{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background: #111111;
+.code{
+    
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background: #111111;
 
-    }
-
-
-    .design{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background: #333333;
-
-    }
-
-    .world{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background: #444444;
-
-    }
-
-    .science{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background: #555555;
-
-    }
-
-    .blog{
-        
-        /*background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;*/
-        background: #666666;
-
-    }
-
-    .footer{
-        background-image: url('/img/footerbg.jpg');
-        background-position: bottom center;
-    }
-
-    .earth{
-        background-image: url('/img/space-road.jpg');
-        background-position: 70% 60%;
-    }
+}
 
 
-    ul li .subcontent{
-        position: absolute;
-        top: 50px;
-        color: white;
-        font-family: helvetica;
-    }
+.design{
+    
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background: #333333;
 
-    h1{
-        font-family: 'Amaranth', sans-serif;
-        font-size: 40px;
-    }
+}
 
-    h1 span{
-        color: #009900;
-    }
+.world{
+    
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background: #444444;
 
-    .menu{
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        height: 70px;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        background: #111111;
+}
 
-    }
+.science{
+    
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background: #555555;
 
-    .menu-buttons{
-        width: 300px;
-        margin-top: -80px;
-        float: right;
-    }
+}
 
-    .banner{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-image:url('/img/banner.png');
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
+.blog{
+    
+    /*background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;*/
+    background: #666666;
 
-    .home-button{
-        background-image:url('/img/home-button.png');
-        width: 100px;
-        height: 100px;
-    }
+}
 
-    .home-button:hover{
-        background-image:url('/img/home-button-over.png');
-    }
+.footer{
+    background-image: url('/img/footerbg.jpg');
+    background-position: bottom center;
+}
 
-    .menu-section-one{
-        position: relative;
-        width: 480px;
-        height: 100px;
-        margin: auto; 
-        left: -320px;
-        top: 10px;
-
-    }
-
-    .menu-section-two{
-        position: relative;
-        width: 480px;
-        height: 100px;
-        margin: auto; 
-        left: 360px;
-        top: -90px;
-    }
-
-    .top-menu-button{
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        font-weight: bold;
-        color: white;
-    }
-
-    .top-menu-button:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .top-menu-button img{
-        margin-left: 13px;
-        width: 54px;
-        padding-bottom: 3px;
-    }
-
-    .top-menu-button span{
-        position: absolute;
-        text-align: center;
-        margin-top: 50px;
-
-    }
-
-    .footer-content{
-        background: black;
-        opacity: 0.5;
-        width: 80%;
-        height: 200px;
-        margin-top: 300px;
-    }
-
-    #code-for-tomorrow{
-        color: white;
-        text-align: center;
-    }
-
-    #natural-digital{
-        color: white;
-        text-align: center;
-    }
-
-    #develop-graphic{
-        position: absolute;
-        background-image: url('/img/develop-home.png');
-        height: 45px;
-        width: 200px;
-        background-repeat: no-repeat;
-        margin-left: -620px;
-        margin-top: 450px;
-    }
-
-    #learn-graphic{
-        position: absolute;
-        background-image: url('/img/learn-home.png');
-        height: 45px;
-        width: 250px;
-        background-repeat: no-repeat;
-        margin-left: -790px;
-        margin-top: 590px;
-    }
-
-    #inform-graphic{
-        position: absolute;
-        background-image: url('/img/inform-home.png');
-        height: 45px;
-        width: 250px;
-        background-repeat: no-repeat;
-        margin-left: -680px;
-        margin-top: 730px;
-    }
+.earth{
+    background-image: url('/img/space-road.jpg');
+    background-position: 70% 60%;
+}
 
 
-    #contribute-graphic{
-        position: absolute;
-        background-image: url('/img/contribute-home.png');
-        height: 45px;
-        width: 300px;
-        background-repeat: no-repeat;
-        margin-left: 160px;
-        margin-top: 730px;
-    }
+ul li .subcontent{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    color: white;
+    font-family: helvetica;
+}
+
+h1{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 40px;
+}
+
+h1 span{
+    color: #009933;
+}
+
+.menu{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #111111;
+
+}
+
+.menu-buttons{
+    width: 300px;
+    margin-top: -80px;
+    float: right;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image:url('/img/banner.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.home-button{
+    background-image:url('/img/home-button.png');
+    width: 100px;
+    height: 100px;
+}
+
+.home-button:hover{
+    background-image:url('/img/home-button-over.png');
+}
+
+.menu-section-one{
+    position: relative;
+    width: 480px;
+    height: 100px;
+    margin: auto; 
+    left: -320px;
+    top: 10px;
+
+}
+
+.menu-section-two{
+    position: relative;
+    width: 480px;
+    height: 100px;
+    margin: auto; 
+    left: 360px;
+    top: -90px;
+}
+
+.top-menu-button{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+.top-menu-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top-menu-button img{
+    margin-left: 13px;
+    width: 54px;
+    padding-bottom: 3px;
+}
+
+.top-menu-button span{
+    position: absolute;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.footer-content{
+    background: black;
+    opacity: 0.5;
+    width: 80%;
+    height: 200px;
+    margin-top: 300px;
+}
+
+#code-for-tomorrow{
+    color: white;
+    text-align: center;
+}
+
+#natural-digital{
+    color: white;
+    text-align: center;
+}
+
+#develop-graphic{
+    position: absolute;
+    background-image: url('/img/develop-home.png');
+    height: 45px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-left: -620px;
+    margin-top: 450px;
+}
+
+#learn-graphic{
+    position: absolute;
+    background-image: url('/img/learn-home.png');
+    height: 45px;
+    width: 250px;
+    background-repeat: no-repeat;
+    margin-left: -790px;
+    margin-top: 590px;
+}
+
+#inform-graphic{
+    position: absolute;
+    background-image: url('/img/inform-home.png');
+    height: 45px;
+    width: 250px;
+    background-repeat: no-repeat;
+    margin-left: -680px;
+    margin-top: 730px;
+}
 
 
-    #inspire-graphic{
-        position: absolute;
-        background-image: url('/img/inspire-home.png');
-        height: 45px;
-        width: 300px;
-        background-repeat: no-repeat;
-        margin-left: 300px;
-        margin-top: 590px;
-    }
+#contribute-graphic{
+    position: absolute;
+    background-image: url('/img/contribute-home.png');
+    height: 45px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin-left: 160px;
+    margin-top: 730px;
+}
 
 
-    #change-graphic{
-        position: absolute;
-        background-image: url('/img/change-home.png');
-        height: 45px;
-        width: 300px;
-        background-repeat: no-repeat;
-        margin-left: 130px;
-        margin-top: 450px;
-    }
+#inspire-graphic{
+    position: absolute;
+    background-image: url('/img/inspire-home.png');
+    height: 45px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin-left: 300px;
+    margin-top: 590px;
+}
 
-    a{
-        text-decoration: none;
-        color: white;
-    }
 
-    #rocket{
-        position: absolute;
-        background-image: url('/img/rocket.png');
-        height: 100px;
-        width: 100px;
-        background-repeat: no-repeat;
-        margin-left: -110px;
-        margin-top: 525px;
-        z-index: 1;
-    }
-    #rocket-fire{
-        background-image: url('/img/rocket-fire.png');
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 50px;
-        margin-top: 20px;
-        z-index: 0;
-    }
+#change-graphic{
+    position: absolute;
+    background-image: url('/img/change-home.png');
+    height: 45px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin-left: 130px;
+    margin-top: 450px;
+}
 
-    #mac-logo{
-        position: absolute;
-        background-image: url('/img/apple-logo.png');
-        width: 100px;
-        height: 100px;
-        margin-top: 530px;
-        margin-left: -170px;
-    }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#rocket{
+    position: absolute;
+    background-image: url('/img/rocket.png');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin-left: -110px;
+    margin-top: 525px;
+    z-index: 1;
+}
+#rocket-fire{
+    background-image: url('/img/rocket-fire.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    z-index: 0;
+}
+
+#mac-logo{
+    position: absolute;
+    background-image: url('/img/apple-logo.png');
+    width: 100px;
+    height: 100px;
+    margin-top: 530px;
+    margin-left: -170px;
+}
 /*  margin-top: 580px;
-    margin-left: -650px;*/
+margin-left: -650px;*/
 
-    #sublime-window{
-        position: absolute;
-        background-image: url('/img/sublime-window.png');
-        width: 376px;
-        height: 235px;
-        margin-top: 465px;
-        margin-left: -308px;
-    }
+#sublime-window{
+    position: absolute;
+    background-image: url('/img/sublime-window.png');
+    width: 376px;
+    height: 235px;
+    margin-top: 465px;
+    margin-left: -308px;
+}
 
-    #mac-pointer{
-        position: absolute;
-        background-image: url('/img/mac-pointer.png');
-        width: 376px;
-        height: 235px;
-        margin-top: 570px;
-        margin-left: -130px;
-        background-repeat: no-repeat;
-    }
+#mac-pointer{
+    position: absolute;
+    background-image: url('/img/mac-pointer.png');
+    width: 376px;
+    height: 235px;
+    margin-top: 570px;
+    margin-left: -130px;
+    background-repeat: no-repeat;
+}
 
-    #sublime-file-menu{
-        position: absolute;
-        background-image: url('/img/sublime-file-menu.png');
-        width: 376px;
-        height: 235px;
-        margin-top: 475px;
-        margin-left: -308px;
-        background-repeat: no-repeat;
-    }
+#sublime-file-menu{
+    position: absolute;
+    background-image: url('/img/sublime-file-menu.png');
+    width: 376px;
+    height: 235px;
+    margin-top: 475px;
+    margin-left: -308px;
+    background-repeat: no-repeat;
+}
 
-    #blue-earth{
-        position: absolute;
-        background-image: url('/img/blue-earth.png');
-        width: 100px;
-        height: 100px;
-        margin-top: 530px;
-        margin-left: -170px;
-        background-repeat: no-repeat;
-    }
+#blue-earth{
+    position: absolute;
+    background-image: url('/img/blue-earth.png');
+    width: 100px;
+    height: 100px;
+    margin-top: 530px;
+    margin-left: -170px;
+    background-repeat: no-repeat;
+}
 
-    #launch-button{
-        position: absolute;
-        background-image: url('/img/launch-button.png');
-        width: 100px;
-        height: 100px;
-        margin-top: 645px;
-        margin-left: -155px;
-        background-repeat: no-repeat;
-    }
+#launch-button{
+    position: absolute;
+    background-image: url('/img/launch-button.png');
+    width: 100px;
+    height: 100px;
+    margin-top: 645px;
+    margin-left: -155px;
+    background-repeat: no-repeat;
+}
 
-    #binary-screen{
-        position: absolute;
-        background-image: url('/img/binary.png');
-        width: 382px;
-        height: 235px;
-        margin-top: 465px;
-        margin-left: -312px;
-        background-repeat: no-repeat;
-    }
+#binary-screen{
+    position: absolute;
+    background-image: url('/img/binary.png');
+    width: 382px;
+    height: 235px;
+    margin-top: 465px;
+    margin-left: -312px;
+    background-repeat: no-repeat;
+}
 
-    #aurora-screen{
-        position: absolute;
-        background-image: url('/img/aurora.png');
-        width: 400px;
-        height: 235px;
-        margin-top: 465px;
-        margin-left: -312px;
-        background-repeat: no-repeat;
-    }
+#aurora-screen{
+    position: absolute;
+    background-image: url('/img/aurora.png');
+    width: 400px;
+    height: 235px;
+    margin-top: 465px;
+    margin-left: -312px;
+    background-repeat: no-repeat;
+}
 
-    #natural-world{
-        color: white;
-    }
+#natural-world{
+    color: white;
+}
 
-    #digital-world{
-        color: white;
-    }
+#digital-world{
+    color: white;
+}
+
+.slideshow{
+    position: relative;
+    width: 1200px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.slideshow .slider{
+    display: block;
+    width: 3600px;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+}
+
+li .slide{
+    float: left;
+    list-style-type: none;
+    width: 1200px;
+    height: 750px;
+}
+
