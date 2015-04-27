@@ -168,5 +168,5 @@ app = webapp2.WSGIApplication([
 	('/create_user', CreateUser),
 	('/logout', Logout),
     ('/parallax', Parallax),
-    ('/surprise', Heart)
+    ('/four_month_anniversary', Heart)
 ], debug=True)
