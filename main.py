@@ -156,17 +156,18 @@ class Parallax(MainHandler):
         else:
             self.render('parallax.html')
 
-class Blog(MainHandler):
+class Heart(MainHandler):
     def get(self):
         if self.user:
-            self.render('blog.html', username = self.user.username)
+            self.render('heart.html', username = self.user.username)
         else:
-            self.render('blog.html')
+            self.render('heart.html')
+
 
 app = webapp2.WSGIApplication([
 	('/', HomePage),
 	('/create_user', CreateUser),
 	('/logout', Logout),
     ('/parallax', Parallax),
-    ('/blog', Blog)
+    ('/four_month_anniversary', Heart)
 ], debug=True)
